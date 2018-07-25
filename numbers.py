@@ -15,24 +15,49 @@ def sub():
     print("The answer is " +str(ans))
     return ans
 
-
 def divide():
-    return
+    print('divide two number')
+    num1 = int(input('Enter 1st number:  ')) #This line of code will take the first number
+    num2 = int(input('Enter 2nd number:  ')) #Thisline of coed will take the second number
+    ans = num1/num2
+    print("The answer is " +str(ans))
+    return ans
+
 def multiply():
-    return
+    print('multiply two number')
+    num1 = int(input('Enter 1st number:  ')) #This line of code will take the first number
+    num2 = int(input('Enter 2nd number:  ')) #This line of code will take the second number
+    ans = num1*num2
+    print("The answer is "  +str(ans))
+    return ans
+
 def mod():
+    print('modular quotient')
+    num1 = int(input('Enter 1st number:  '))
+    num2 = int(input('Enter 2nd number:  '))
+    ans = num1%num2
+    print("The answer is "   +str(ans))
     return
 
 while(True):
     print('Option 1 - add two numbers')
     print('Option 2 - sub two numbers')
-    print('Option 3 - exit')
-    option = int(input('Pick an option 1 - 3: '))
+    print('Option 3 - divide two numbers')
+    print('Option 4 - multiply two numbers')
+    print('Option 5 - modular quotient')
+    print('Option 6 - exit')
+    option = int(input('Pick an option 1 - 6: '))
     if option == 1:
         add()
     elif option == 2:
         sub()
     elif option == 3:
+        divide()
+    elif option == 4:
+        multiply()
+    elif option == 5:
+        mod()
+    elif option == 6:
         exit()
     else:
         print('Invalid input')
