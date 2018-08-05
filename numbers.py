@@ -1,4 +1,4 @@
-
+from OperationManager import OperationManager
 def add():
     print('Add two numbers')
     num1 = int(input('Enter 1st number: ')) #input takes keyboard input
@@ -38,7 +38,7 @@ def mod():
     ans = num1%num2
     print("The answer is "   +str(ans))
     return
-
+manager = OperationManager()
 while(True):
     print('Option 1 - add two numbers')
     print('Option 2 - sub two numbers')
